@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "ghostchat",
+	"version": "${version}",
+	"name": "GhostChat",
+	"description": "Go silent, communicate invisibly. This mod implements a private chat channel by transmitting messages through your skin layers.",
+	"authors": [
+		"UDPSendToFailed"
+	],
+	"contact": {
+		"sources": "https://github.com/UDPSendToFailed/GhostChat"
+	},
+	"license": "MIT",
+	"icon": "assets/ghostchat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+			"client": [
+				"com.udpsendtofailed.ghostchat.client.GhostChatClient"
+			]
+		},
+	"mixins": [
+		"ghostchat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

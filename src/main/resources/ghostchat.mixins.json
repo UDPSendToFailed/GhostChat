@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.udpsendtofailed.ghostchat.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "ClientPlayNetworkHandlerMixin",
+    "ClientPacketListenerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
